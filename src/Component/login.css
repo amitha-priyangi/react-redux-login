@@ -1,38 +1,42 @@
-.login{
+.login {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
     align-items: center;
     font-family: "Inter";
-   width: 400px;
-   height: 600px;
-   margin: 40px 40%;
+    width: 400px;
+    height: 600px;
+    margin: 40px 40%;
     border-radius: 1px;
-        background: white;
-        box-shadow: 20px 20px 60px #bebebe,
-            -20px -20px 60px #ffffff;
+    background: white;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
 }
-.login-logo{
+
+.login-logo {
     width: 20vh;
     height: 20vh;
     display: flex;
     flex-direction: column;
 }
-.login-form{
+
+.login-form {
     display: flex;
     flex-direction: column;
 }
-.login-form>h1{
+
+.login-form>h1 {
     font-size: 30px;
     margin-bottom: 10px;
     padding-bottom: 10px;
     letter-spacing: -1px;
     text-align: left;
 }
-.login-form > input{
+
+.login-form>input {
     min-width: 300px;
-    padding:20px 0;
+    padding: 20px 0;
     padding-left: 15px;
     margin-bottom: 10px;
     outline: none;
@@ -41,7 +45,8 @@
     border-radius: 2px;
     font-size: 15px;
 }
-.submit-btn{
+
+.submit-btn {
     padding: 17px 30px;
     margin-top: 10px;
     background: black;

@@ -7,23 +7,23 @@ const Login = () => {
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
-    
+
     const dispatch = useDispatch();
 
     const handleSubmit = (e) => {
         e.preventDefault();
         dispatch(
             login({
-            name: name,
-            email: email,
-            password: password,
-            
-        }))
+                name: name,
+                email: email,
+                password: password,
+
+            }))
     }
     return (
         <div className='login'>
             <img src='https://png.pngtree.com/png-vector/20191110/ourmid/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg' alt='logo' className='login-logo'></img>
-            <form className='login-form' onSubmit={(e)=>handleSubmit(e)}>
+            <form className='login-form' onSubmit={(e) => handleSubmit(e)}>
                 <h1>Login Here</h1>
                 <input
                     type='name'

@@ -1,14 +1,15 @@
-// import { getByRole, render, screen } from '@testing-library/react';
-// import App from './App';
-// import Logout from './Component/Logout';
+import { render, screen } from '@testing-library/react';
+import App from './App';
+import { store } from 'redux';
+import { React } from 'react';
+import { Provider } from 'react-redux';
 
-// test("renders Logout page", () => {
-//   render(<App />);
-//   expect(screen.getByText(/Login Here/i)).toBeInTheDocument();
-// });
-
-// test("renders Logout page 2", () => {
-//   render(<App />);
-//   const childElement = screen.getByRole("button")
-//   expect(childElement).toBeDisabled();
-// });
+test('renders Logout page', () => {
+    render(
+        <Provider store={store}>
+            <App />
+        </Provider>
+    );
+    const login = screen.getByText(/Login Here/i);
+    expect(login).toBeInTheDocument();
+});
